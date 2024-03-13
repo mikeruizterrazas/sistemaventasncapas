@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SistemasVentas.Modelos
 {
-    internal class TipoProd
+    public class TipoProd
     {
         public int idtipoprod { get; set; }
         public string nombre { get; set; }

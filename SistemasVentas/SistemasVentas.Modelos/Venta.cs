@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace SistemasVentas.Modelos
 {
-    internal class Venta
+    public class Venta
     {
         public int idventa { get; set; }
         public int idcliente { get; set; }
         public int idvendedor { get; set; }
-        public string fecha{ get; set; }
-        public string total { get; set; }
+        public DateTime fecha{ get; set; }
+        public Decimal total { get; set; }
         public string estado { get; set; }
     }
 }

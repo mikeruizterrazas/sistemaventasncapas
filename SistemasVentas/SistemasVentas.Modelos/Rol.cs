@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SistemasVentas.Modelos
 {
-    internal class Rol
+    public class Rol
     {
         public int idrol { get; set; }
         public string nombre { get; set; }

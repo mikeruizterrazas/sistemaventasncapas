@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace SistemasVentas.Modelos
 {
-    internal class Provee
+    public class Provee
     {
         public int idprovee { get; set; }
         public int idproducto { get; set; }
         public int idproveedor { get; set; }
-        public string fecha { get; set; }
-        public string precio { get; set; }
+        public DateTime fecha { get; set; }
+        public Decimal precio { get; set; }
     }
 }
