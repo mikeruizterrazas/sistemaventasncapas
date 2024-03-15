@@ -12,6 +12,20 @@ namespace SistemasVentas.VISTA
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
             Application.Run(new PersonaVistas.PersonaInsertarVista());
+            Application.Run(new ClienteVistas.ClienteListarVista());
+            Application.Run(new DetalleIngVistas.DetalleIngListarVista());
+            Application.Run(new DetalleVentVistas.DetalleVentaListarVista());
+            Application.Run(new IngresoVistas.IngresoListarVista());
+            Application.Run(new MarcaVistas.MarcaListarVista());
+            Application.Run(new ProductoVistas.ProductoListarVista());
+            Application.Run(new ProveeVistas.ProveeListarVista());
+            Application.Run(new ProveedorVistas.ProveedorListarVista());
+            Application.Run(new RolVistas.RolListarVista());
+            Application.Run(new TipoProdVistas.TipoProdListarVista());
+            Application.Run(new UsuarioVistas.UsuarioListarVista());
+            Application.Run(new UsuarioRolVistas.UsuarioRolListarVista());
+            Application.Run(new VentaVistas.VentaListarVista());
         }
     }
 }
+    

@@ -31,5 +31,20 @@ namespace SistemasVentas.VISTA.PersonaVistas
             bss.InsertarPersonaBss(p);
             MessageBox.Show("Se guardo correctamente la persona");
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void PersonaInsertarVista_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
