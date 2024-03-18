@@ -20,5 +20,10 @@ namespace SistemasVentas.DAL
             string consulta = "insert into cliente values('" + usuario.idusuario+ "','"+usuario.idpersona+ "','"+usuario.nombreuser+ "','"+usuario.contraseña+ "','"+usuario.fechareg + "'," + "'Activo')";
             conexion.Ejecutar(consulta);
         }
+
+        public void InsertarUsuarioRolDal(UsuarioRol usuariorol)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

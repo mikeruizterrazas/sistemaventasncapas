@@ -1,4 +1,5 @@
 ﻿using SistemasVentas.BSS;
+using SistemasVentas.VISTA.UsuarioVistas;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -21,6 +22,46 @@ namespace SistemasVentas.VISTA.PersonaVistas
         private void PersonaListarVista_Load(object sender, EventArgs e)
         {
             dataGridView1.DataSource = bss.ListaPersonaBss();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            UsuarioInsertarVista2.idpersonaseleccionada = Convert.ToInt32(dataGridView1.CurrentRow.Cells[0].Value);
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            PersonaInsertarVista fr=new PersonaInsertarVista();
+            if(fr.ShowDialog()==DialogResult.OK)
+            {
+                dataGridView1.DataSource = bss.ListaPersonaBss();
+            }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            int idpersonaseleccionada = Convert.ToInt32(dataGridView1.CurrentRow.Cells[0].Value);
+            PersonaEditarVista fr = new PersonaEditarVista(idpersonaseleccionada);
+            if(fr.ShowDialog()==DialogResult.OK)
+            {
+                dataGridView1.DataSource = bss.ListaPersonaBss();
+            }
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            int idpersonaseleccionada = Convert.ToInt32(dataGridView1.CurrentRow.Cells[0].Value);
+            DialogResult result = MessageBox.Show("esta seguro de eliminar esta persona", "eliminado", MessageBoxButtons.YesNo);
+            if (result==DialogResult.Yes)
+            {
+                bss.EliminarPersonaBss(idpersonaseleccionada);
+                dataGridView1.DataSource = bss.ListaPersonaBss();
+            }
         }
     }
 }

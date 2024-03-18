@@ -10,7 +10,7 @@ namespace SistemasVentas.VISTA
         {
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
-            ApplicationConfiguration.Initialize();
+            /*ApplicationConfiguration.Initialize();
             Application.Run(new PersonaVistas.PersonaInsertarVista());
             Application.Run(new ClienteVistas.ClienteListarVista());
             Application.Run(new DetalleIngVistas.DetalleIngListarVista());
@@ -24,7 +24,9 @@ namespace SistemasVentas.VISTA
             Application.Run(new TipoProdVistas.TipoProdListarVista());
             Application.Run(new UsuarioVistas.UsuarioListarVista());
             Application.Run(new UsuarioRolVistas.UsuarioRolListarVista());
-            Application.Run(new VentaVistas.VentaListarVista());
+            Application.Run(new VentaVistas.VentaListarVista());*/
+            //Application.Run(new UsuarioVistas.UsuarioInsertarVista2());
+            Application.Run(new PersonaVistas.PersonaListarVista());
         }
     }
 }

@@ -20,5 +20,10 @@ namespace SistemasVentas.BSS
         {
             dal.InsertarUsuarioDal(usuario);
         }
+
+        public void InsertarUsuariodBss(Usuario u)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
